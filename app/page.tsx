@@ -1,9 +1,8 @@
 import NextImage from 'next/image';
-import { ArrowUpRight, ArrowRight, ShieldCheck, Check, LockKeyhole, Fingerprint, FileCheck2 } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, ShieldCheck, Check, Video, Layers3, LockKeyhole, Fingerprint, FileCheck2 } from 'lucide-react';
 import { Navigation } from '@/components/navigation';
 import { ScrollJourney } from '@/components/scroll-journey';
 import { Industries } from '@/components/industries';
-import { PlatformJourney } from '@/components/platform-journey';
 import { PageMotion } from '@/components/page-motion';
 
 export default function Home() {
@@ -19,18 +18,7 @@ export default function Home() {
             <div className="hero-actions"><a className="cta" href="https://www.blinking.id/contact-us/">Get in touch <ArrowUpRight size={19}/></a><a className="text-link" href="#journey">Explore the journey <ArrowRight size={18}/></a></div>
             <p className="hero-note"><ShieldCheck size={17}/> Privacy by design. Confidence at every step.</p>
           </div>
-          <div className="hero-art">
-            <div className="hero-signal" aria-hidden="true">
-              <div className="hero-signal-glow"/>
-              <div className="hero-orbit hero-orbit-one"/>
-              <div className="hero-orbit hero-orbit-two"/>
-              <div className="hero-portrait"><NextImage src="/media/identity-hero.webp" alt="" width="620" height="620" fetchPriority="high"/></div>
-              <div className="hero-signal-core"><Fingerprint size={42} strokeWidth={1.1}/><span>identity signal</span></div>
-              <div className="hero-signal-chip hero-signal-chip-top"><span className="signal-dot"/>Verified human</div>
-              <div className="hero-signal-chip hero-signal-chip-bottom"><Check size={14}/>Privacy by design</div>
-            </div>
-            <span className="art-caption">A real person. A world of possibilities.</span>
-          </div>
+          <div className="hero-art"><NextImage src="/media/identity-hero.webp" alt="A real person at the center of a blue biometric lens and glass identity card" width="620" height="620" fetchPriority="high"/><span className="art-caption">A real person. A world of possibilities.</span></div>
         </div>
         <div className="hero-baseline container"><span>Your trusted KYC partner</span><span>Verify. Welcome. Grow.</span></div>
       </section>
@@ -38,8 +26,14 @@ export default function Home() {
       <div className="journey-region"><section id="journey" className="intro container"><h2>Every great journey<br/>starts with trust.</h2><p>Verify an identity. Meet face to face. Collect what matters. Three connected ways to build customer confidence.</p></section>
       <ScrollJourney /></div>
       <section className="solutions container" id="solutions">
-        <div className="section-heading" data-reveal><h2>Your journey.<br/>Your rules. One platform.</h2><p>Scroll through the moments that make an onboarding flow feel like your business, from the first check to the final decision.</p></div>
-        <PlatformJourney />
+        <div className="section-heading" data-reveal><h2>Your journey.<br/>Your rules. One platform.</h2><p>Choose the checks you need. Connect them into an experience that feels like your business.</p></div>
+        <div className="product-grid">
+          <article className="product-identify" data-reveal><div className="product-copy"><span className="product-name"><Fingerprint size={22}/> Blinking Identify</span><h3>Make a great<br/>first impression.</h3><p>A complete identity proofing platform, from document capture to biometric verification and screening.</p><a className="text-link" href="https://www.blinking.id/solutions/identify/">Explore Identify <ArrowUpRight size={18}/></a><div className="product-tags"><span>Document checks</span><span>Biometrics</span><span>AML</span></div></div><div className="product-phone"><NextImage src="/media/identify.png" alt="Blinking’s existing mobile identity verification interface" width="293" height="608" loading="lazy"/></div></article>
+          <div className="product-side">
+            <article className="product-video" data-reveal><Video size={27} strokeWidth={1.5}/><h3>Video verification.<br/>With a human touch.</h3><p>Bring an agent into the journey with real-time video identification and manual ID comparison.</p><a className="text-link" href="https://www.blinking.id/solutions/identify/">Explore video identification <ArrowUpRight size={17}/></a></article>
+            <article className="product-config" data-reveal><Layers3 size={26} strokeWidth={1.5}/><div><h3>Collect data. Keep it connected.</h3><p>Configure your flow, collect the right data, and manage due diligence in one place.</p><a className="text-link" href="https://www.blinking.id/plans/">Find your fit <ArrowUpRight size={17}/></a></div></article>
+          </div>
+        </div>
         <div className="capability-line" data-reveal><span><Check size={16}/> Configurable onboarding</span><span><Check size={16}/> Cross-platform experience</span><span><Check size={16}/> Easy integration</span></div>
       </section>
       <Industries />
