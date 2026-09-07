@@ -10,13 +10,33 @@ npm run dev -- --port 5176
 npm run build
 ```
 
-## Animation
+## Three distinct scroll scenes
 
-Higgsfield generated one GPT Image 2 image and one 6-second Seedance 2.5 clip. Preflight estimates were 6.5 + 54 = 60.5 credits, within the 200-credit cap; no additional generations were submitted. The clip was converted using ffmpeg in Higgsfield's media sandbox into 90 desktop WebP frames (720px, 15fps) and 90 mobile frames (480px). The phone experience requests every second mobile frame. The hero WebP is about 52KB; the full desktop sequence is about 1.5MB.
+- Verify clients’ identity: biometric lens, real person and identity document.
+- Video verification: a live customer-and-agent call on a laptop.
+- Collect data: identity, contact and address cards organizing into a folder.
 
-`components/scroll-journey.tsx` connects page scroll to frame selection using GSAP ScrollTrigger. Five concurrent requests and a bounded decoded-image cache limit resource use. A static poster remains visible until frames load; a pause button, keyboard-accessible chapter links, mobile layout, and reduced-motion presentation are included. The generated visual is illustrative, not a live identity-verification product.
+Each chapter controls its own clip through GSAP ScrollTrigger. ffprobe confirmed all raw sources are 1440 x 1440 at 24fps. FFmpeg exports use 1200px desktop frames at quality91, and 768px mobile frames at quality86. Mobile requests every second frame. Feathered edges and background-colored padding blend the scenes into #F3F4F8 instead of a bordered tile.
 
-The contact, product-detail, plan and company links go to Blinking's real site. No fake form submissions, invented statistics, or cloned Signzy customer claims are included.
+The component keeps at most five concurrent requests and a cache of 16 desktop or 12 mobile decoded frames. Posters remain visible while loading and when motion fails; users can retry, pause, resume and navigate between chapters. Reduced-motion visitors see all three still scenes beside their descriptions.
+
+## Credit ledger
+
+Three image masters and three video clips were generated through Higgsfield, with no generation retries.
+
+| Generation | Exact estimated credits |
+|---|---:|
+| Original identity image, GPT Image2 2k/high | 6.5 |
+| Original identity clip, Seedance2.5 6s | 54 |
+| Video verification image, GPT Image2 2k/high | 6.5 |
+| Data collection image, GPT Image2 2k/high | 6.5 |
+| Video verification clip, Seedance2.5 6s | 54 |
+| Data collection clip, Seedance2.5 5s | 45 |
+| **Total** | **172.5 / 200** |
+
+These are the tools' exact preflight estimates. FFmpeg conversions did not submit generation jobs. Visuals are illustrative, not a live identity verification service.
+
+Contact, product, plan and company links go to Blinking's real site. No fake forms or invented statistics are included.
 
 ## Sources
 
@@ -26,7 +46,7 @@ The contact, product-detail, plan and company links go to Blinking's real site. 
 - https://www.blinking.id/wp-content/themes/blinking/assets/img/general/blinking-logo.svg
 - https://www.signzy.com/
 
-The original logo, footer logo, customer logos and phone screenshot were downloaded directly from Blinking. Epilogue is self-hosted from the same Google Fonts family referenced by Blinking's CSS.
+The original logo, footer logo, customer logos and phone screenshot were downloaded directly from Blinking. Epilogue is self-hosted from the same Google Fonts family referenced by Blinking's CSS. Its OFL license is included with the font files.
 
 ## Verification
 
