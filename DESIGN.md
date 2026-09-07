@@ -23,3 +23,13 @@ https://www.blinking.id/wp-content/themes/blinking/assets/img/general/blinking-l
 https://www.signzy.com/
 
 Motion revision: three distinct clips, shared #F3F4F8 background, feathered edges, high-quality 24fps frame exports, and per-chapter progress.
+
+## September 8 revision
+
+Targeted evolution for enterprise buyers: preserve Epilogue, original palette, logo, navigation, and the three existing verification films. Replace the repeated hero picture with one new gateway sculpture on the exact pale neutral background. Motion intensity 6, layout variance 6, density 4.
+
+Component tree: Home → HeroArtwork; existing ScrollJourney; PlatformJourney → connected four-step diagram + explanatory panels + step navigation; Industries → horizontal viewport + three distinct use-case diagrams + navigation.
+
+The platform story assembles Collect → Verify → Review → Welcome as the visitor scrolls. Industry panels explain bank account opening, subscriber activation, and verified player access. These are examples, never simulated live results or invented product screenshots. Desktop scroll moves the panels horizontally; smaller/short screens use horizontal swiping and explicit navigation. Reduced-motion visitors can access every step without pinning.
+
+Risks and corrections: repeated hero art → new asset; generic identical industry cards → specific symbols and process labels; clipping under the header → measured pin distance and minimum-height breakpoint; hidden keyboard destinations → controls and focus-aware navigation; motion failing to load → all content readable in the initial static layout. Continuous movement uses GSAP refs, with React state only for chapter changes.

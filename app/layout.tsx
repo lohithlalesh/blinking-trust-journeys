@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './storytelling.css';
 export const metadata: Metadata = {
   title: 'Blinking — Real people. Real trust.',
   description: 'Turn a first interaction into a trusted relationship. Explore Blinking’s configurable identity verification, video identification, and digital onboarding solutions.',

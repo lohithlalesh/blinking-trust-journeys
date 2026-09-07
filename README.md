@@ -22,7 +22,7 @@ The component keeps at most five concurrent requests and a cache of 16 desktop o
 
 ## Credit ledger
 
-Three image masters and three video clips were generated through Higgsfield, with no generation retries.
+Four image masters and three video clips were generated through Higgsfield, with no generation retries.
 
 | Generation | Exact estimated credits |
 |---|---:|
@@ -32,11 +32,20 @@ Three image masters and three video clips were generated through Higgsfield, wit
 | Data collection image, GPT Image2 2k/high | 6.5 |
 | Video verification clip, Seedance2.5 6s | 54 |
 | Data collection clip, Seedance2.5 5s | 45 |
-| **Total** | **172.5 / 200** |
+| New gateway hero, Nano Banana image | 2 |
+| **Total** | **174.5 / 200** |
 
 These are the tools' exact preflight estimates. FFmpeg conversions did not submit generation jobs. Visuals are illustrative, not a live identity verification service.
 
 Contact, product, plan and company links go to Blinking's real site. No fake forms or invented statistics are included.
+
+## Connected platform and industry stories
+
+The hero now uses a dedicated 1400px WebP gateway sculpture (32KB), with radial edge feathering against the original pale background. The verification films retain their original imagery.
+
+The platform sequence connects Collect → Verify → Review → Welcome. GSAP scrubs the connecting lines, reveals the steps, and transitions the explanatory copy in a pinned stage. Below 1024px width or 800px height, all steps stay in the document and a compact progress diagram remains visible as they scroll. Reduced motion keeps every step visible without animation or pinning.
+
+Industry examples show bank account opening, remote subscriber onboarding, and player verification. On spacious desktops vertical scrolling moves one horizontal track; smaller screens and reduced-motion mode use native horizontal scrolling. Named industry buttons and previous/next controls are available in both modes. These are explanatory diagrams, not screenshots or live verification results.
 
 ## Sources
 
@@ -52,7 +61,7 @@ The original logo, footer logo, customer logos and phone screenshot were downloa
 
 ```sh
 npx tsc --noEmit
-npx oxlint app components/navigation.tsx components/scroll-journey.tsx components/industries.tsx components/page-motion.tsx
+npx oxlint app components/navigation.tsx components/scroll-journey.tsx components/platform-journey.tsx components/industries.tsx components/page-motion.tsx
 npm run build
 ```
 
