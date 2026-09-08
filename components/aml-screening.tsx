@@ -16,10 +16,10 @@ export function AmlScreening() {
         <a className="text-link" href="https://www.blinking.id/solutions/identify/">Explore identity and screening <ArrowUpRight size={18}/></a>
       </div>
       <figure className="aml-visual" data-reveal aria-labelledby="aml-visual-caption">
-        <figcaption id="aml-visual-caption"><span>SCREENING ENGINE</span><span>IDENTITY IN / CONTEXT OUT</span></figcaption>
+        <figcaption id="aml-visual-caption"><span>IDENTITY SIGNAL</span><span>SCREENING CONTEXT</span></figcaption>
         <div className="aml-video-frame">
-          <video className="aml-higgsfield-video" autoPlay loop muted playsInline preload="metadata" poster="/media/higgsfield/aml-3d-poster.jpg" aria-hidden="true" disablePictureInPicture>
-            <source src="/media/higgsfield/aml-3d-loop.mp4" type="video/mp4"/>
+          <video className="aml-higgsfield-video" autoPlay loop muted playsInline preload="metadata" poster="/media/higgsfield/hero-3d-poster.jpg" aria-hidden="true" disablePictureInPicture>
+            <source src="/media/higgsfield/hero-3d-loop.mp4" type="video/mp4"/>
           </video>
           <div className="aml-video-status"><span><ShieldCheck size={19}/></span><div><small>CONNECTED REVIEW</small><strong>Screening context assembled</strong></div></div>
         </div>

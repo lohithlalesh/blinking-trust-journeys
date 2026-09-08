@@ -43,7 +43,7 @@ Contact, product, plan and company links go to Blinking's real site. No fake for
 
 ## Connected platform and industry stories
 
-The hero now uses a 720px Higgsfield 3D identity loop with a feathered pale edge and HTML signal labels. The AML section uses a matching 720px dark screening loop with accessible HTML capability labels. Both files are silent, browser-optimized MP4s with static poster fallbacks. The verification films retain their original imagery.
+The hero uses the exact Blinking SVG mark as a layered CSS 3D loop. The selected 720px Higgsfield identity-ring film now illustrates AML and due diligence, with accessible HTML capability labels and a static poster fallback. The separately generated dark AML candidate remains recorded in the credit ledger but is not shipped. The verification films retain their original imagery.
 
 The platform sequence connects Collect → Verify → Review → Welcome. GSAP scrubs the connecting lines, reveals the steps, and transitions the explanatory copy in a pinned stage. Below 1024px width or 800px height, all steps stay in the document and a compact progress diagram remains visible as they scroll. Reduced motion keeps every step visible without animation or pinning.
 

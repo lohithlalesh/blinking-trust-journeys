@@ -42,4 +42,4 @@ Each industry panel is now a four-beat visual sequence: capture, verify, screen 
 
 ## Brand loop and screening sculpture
 
-The approved CSS-rendered hero and AML sculpture are preserved at the Git tag `approved-3d-logo-aml-2026-09-08`. The active hero uses a Higgsfield 3D identity loop on the exact pale page color; the AML chapter uses a matching dark screening-orb loop. HTML signal and screening labels stay above or below the films so the meaning remains readable and indexable. Static posters replace motion for reduced-motion visitors. These two additions used 12 credits, bringing the project ledger to 186.5 / 200.
+The approved CSS-rendered hero and AML sculpture are preserved at the Git tag `approved-3d-logo-aml-2026-09-08`. After review, the layered official-logo hero was restored. The pale Higgsfield identity-ring loop now illustrates AML and due diligence, while the rejected dark AML candidate is excluded from the build. HTML screening labels keep the meaning readable and indexable, and the static poster replaces motion for reduced-motion visitors. The two generations used 12 credits, bringing the project ledger to 186.5 / 200.
