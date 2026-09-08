@@ -1,9 +1,9 @@
-import { ArrowUpRight, Check, FileSearch, Fingerprint, ShieldCheck, UserCheck } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, FileSearch, Fingerprint, ShieldCheck, UserCheck } from 'lucide-react';
 
 const checks = [
-  { title: 'Verified identity', detail: 'Start from document, biometric, and liveness evidence.', icon: Fingerprint },
-  { title: 'AML & PEP screening', detail: 'Add watchlist and politically exposed person checks.', icon: UserCheck },
-  { title: 'Media & background context', detail: 'Bring relevant screening results into the review.', icon: FileSearch },
+  { title: 'AML & PEP', detail: 'Screening context', icon: UserCheck },
+  { title: 'Watchlists', detail: 'Relevant matches', icon: ShieldCheck },
+  { title: 'Media', detail: 'Background context', icon: FileSearch },
 ];
 
 export function AmlScreening() {
@@ -15,12 +15,24 @@ export function AmlScreening() {
         <p>Connect verified customer data with AML and PEP checks, watchlist and media screening, and your risk rules. Keep the evidence together so your team can review the full context behind a decision.</p>
         <a className="text-link" href="https://www.blinking.id/solutions/identify/">Explore identity and screening <ArrowUpRight size={18}/></a>
       </div>
-      <div className="aml-visual" data-reveal aria-label="Identity evidence moving through AML screening to a review result">
-        <span className="aml-plane" aria-hidden="true"/>
-        <div className="aml-input-card"><span><Fingerprint size={25}/></span><div><small>VERIFIED RECORD</small><strong>Customer identity</strong></div><Check size={18}/></div>
-        <div className="aml-screening-stack">{checks.map(({ title, detail, icon: Icon }, index) => <div className="aml-check" key={title}><span><Icon size={21}/></span><div><em>0{index + 1}</em><strong>{title}</strong><small>{detail}</small></div><Check size={16}/></div>)}</div>
-        <div className="aml-output-card"><ShieldCheck size={25}/><div><small>REVIEW CONTEXT</small><strong>One connected decision record</strong></div></div>
-      </div>
+      <figure className="aml-visual" data-reveal aria-labelledby="aml-visual-caption">
+        <figcaption id="aml-visual-caption"><span>SCREENING ENGINE</span><span>IDENTITY IN / CONTEXT OUT</span></figcaption>
+        <div className="aml-sculpture">
+          <span className="aml-route" aria-hidden="true"><ArrowRight size={18}/></span>
+          <div className="aml-identity-token"><span><Fingerprint size={25}/></span><div><small>VERIFIED</small><strong>Identity</strong></div></div>
+          <div className="aml-orbit-system" aria-hidden="true">
+            <span className="aml-ring aml-ring-a"/>
+            <span className="aml-ring aml-ring-b"/>
+            <span className="aml-ring aml-ring-c"/>
+            <span className="aml-satellite aml-satellite-a"><UserCheck size={18}/></span>
+            <span className="aml-satellite aml-satellite-b"><ShieldCheck size={18}/></span>
+            <span className="aml-satellite aml-satellite-c"><FileSearch size={18}/></span>
+            <span className="aml-core"><ShieldCheck size={45}/><small>SCREEN</small></span>
+          </div>
+          <div className="aml-decision-token"><span><Check size={20}/></span><div><small>REVIEW CONTEXT</small><strong>Decision ready</strong></div></div>
+        </div>
+        <ul className="aml-legend">{checks.map(({ title, detail, icon: Icon }) => <li key={title}><Icon size={17}/><span><strong>{title}</strong><small>{detail}</small></span></li>)}</ul>
+      </figure>
     </div>
   </section>;
 }

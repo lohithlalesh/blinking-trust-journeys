@@ -6,6 +6,7 @@ import { Industries } from '@/components/industries';
 import { PlatformJourney } from '@/components/platform-journey';
 import { AmlScreening } from '@/components/aml-screening';
 import { PageMotion } from '@/components/page-motion';
+import { LogoLoop } from '@/components/logo-loop';
 
 export default function Home() {
   return <>
@@ -19,7 +20,7 @@ export default function Home() {
             <p className="hero-description">Turn a first interaction into a trusted relationship. Identity verification that puts people first.</p>
             <div className="hero-actions"><a className="cta" href="https://www.blinking.id/contact-us/">Get in touch <ArrowUpRight size={19}/></a><a className="text-link" href="#journey">Explore the journey <ArrowRight size={18}/></a></div>
           </div>
-          <div className="hero-art hero-gateway"><NextImage src="/media/hero-gateway.webp" alt="A mint pathway through white and Blinking blue gateways, symbolizing a trusted customer journey" width="1400" height="1400" fetchPriority="high"/></div>
+          <LogoLoop />
         </div>
       </section>
       <section className="proof container" aria-label="Blinking customers"><p>Trusted where trust matters most.</p><div className="customer-logos">{[['raiffeisen','Raiffeisen Bank'],['erste','Erste Bank'],['yettel','Yettel'],['aik','AIK Bank'],['a1','A1'],['chip-card','Chip Card']].map(([file,name])=><NextImage key={file} src={`/brand/${file}.png`} alt={name} width="145" height="64"/>)}</div></section>

@@ -39,3 +39,7 @@ Risks and corrections: repeated hero art → new asset; generic identical indust
 The Review chapter now leads into a dedicated AML and due-diligence section, with indexable copy for AML, PEP, watchlist, media, and configurable risk checks. The section depicts verified identity evidence entering a screening stack and becoming connected review context. It makes the capability visible without presenting a simulated result as real customer data.
 
 Each industry panel is now a four-beat visual sequence: capture, verify, screen or connect, and outcome. Desktop scroll scrubs each sequence before moving the rail to the next industry; mobile keeps the same story in an accessible horizontal carousel. The graphics are code-rendered at device resolution, preserving quality and using no additional video-generation credits.
+
+## Brand loop and screening sculpture
+
+The hero replaces the gateway image with the exact Blinking logo symbol rendered as a layered 3D extrusion. It loops slowly through identity, screening, and trusted-data signals, and stops for reduced-motion visitors. The AML chapter replaces stacked interface cards with a screening-engine sculpture: verified identity enters, three screening signals orbit a central shield, and decision context exits. Both visuals use vector and CSS geometry for sharp rendering without new generated-video credits.
