@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, Check, FileSearch, Fingerprint, ShieldCheck, UserCheck } from 'lucide-react';
+import { ArrowUpRight, FileSearch, ShieldCheck, UserCheck } from 'lucide-react';
 
 const checks = [
   { title: 'AML & PEP', detail: 'Screening context', icon: UserCheck },
@@ -17,19 +17,11 @@ export function AmlScreening() {
       </div>
       <figure className="aml-visual" data-reveal aria-labelledby="aml-visual-caption">
         <figcaption id="aml-visual-caption"><span>SCREENING ENGINE</span><span>IDENTITY IN / CONTEXT OUT</span></figcaption>
-        <div className="aml-sculpture">
-          <span className="aml-route" aria-hidden="true"><ArrowRight size={18}/></span>
-          <div className="aml-identity-token"><span><Fingerprint size={25}/></span><div><small>VERIFIED</small><strong>Identity</strong></div></div>
-          <div className="aml-orbit-system" aria-hidden="true">
-            <span className="aml-ring aml-ring-a"/>
-            <span className="aml-ring aml-ring-b"/>
-            <span className="aml-ring aml-ring-c"/>
-            <span className="aml-satellite aml-satellite-a"><UserCheck size={18}/></span>
-            <span className="aml-satellite aml-satellite-b"><ShieldCheck size={18}/></span>
-            <span className="aml-satellite aml-satellite-c"><FileSearch size={18}/></span>
-            <span className="aml-core"><ShieldCheck size={45}/><small>SCREEN</small></span>
-          </div>
-          <div className="aml-decision-token"><span><Check size={20}/></span><div><small>REVIEW CONTEXT</small><strong>Decision ready</strong></div></div>
+        <div className="aml-video-frame">
+          <video className="aml-higgsfield-video" autoPlay loop muted playsInline preload="metadata" poster="/media/higgsfield/aml-3d-poster.jpg" aria-hidden="true" disablePictureInPicture>
+            <source src="/media/higgsfield/aml-3d-loop.mp4" type="video/mp4"/>
+          </video>
+          <div className="aml-video-status"><span><ShieldCheck size={19}/></span><div><small>CONNECTED REVIEW</small><strong>Screening context assembled</strong></div></div>
         </div>
         <ul className="aml-legend">{checks.map(({ title, detail, icon: Icon }) => <li key={title}><Icon size={17}/><span><strong>{title}</strong><small>{detail}</small></span></li>)}</ul>
       </figure>

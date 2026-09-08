@@ -42,4 +42,4 @@ Each industry panel is now a four-beat visual sequence: capture, verify, screen 
 
 ## Brand loop and screening sculpture
 
-The hero replaces the gateway image with the exact Blinking logo symbol rendered as a layered 3D extrusion. It loops slowly through identity, screening, and trusted-data signals, and stops for reduced-motion visitors. The AML chapter replaces stacked interface cards with a screening-engine sculpture: verified identity enters, three screening signals orbit a central shield, and decision context exits. Both visuals use vector and CSS geometry for sharp rendering without new generated-video credits.
+The approved CSS-rendered hero and AML sculpture are preserved at the Git tag `approved-3d-logo-aml-2026-09-08`. The active hero uses a Higgsfield 3D identity loop on the exact pale page color; the AML chapter uses a matching dark screening-orb loop. HTML signal and screening labels stay above or below the films so the meaning remains readable and indexable. Static posters replace motion for reduced-motion visitors. These two additions used 12 credits, bringing the project ledger to 186.5 / 200.

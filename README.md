@@ -22,7 +22,7 @@ The component keeps at most five concurrent requests and a cache of 16 desktop o
 
 ## Credit ledger
 
-Four image masters and three video clips were generated through Higgsfield, with no generation retries.
+Four image masters and five video clips were generated through Higgsfield, with no generation retries.
 
 | Generation | Exact estimated credits |
 |---|---:|
@@ -33,7 +33,9 @@ Four image masters and three video clips were generated through Higgsfield, with
 | Video verification clip, Seedance2.5 6s | 54 |
 | Data collection clip, Seedance2.5 5s | 45 |
 | New gateway hero, Nano Banana image | 2 |
-| **Total** | **174.5 / 200** |
+| 3D identity hero loop, Grok Video 4s | 6 |
+| 3D AML screening loop, Grok Video 4s | 6 |
+| **Total** | **186.5 / 200** |
 
 These are the tools' exact preflight estimates. FFmpeg conversions did not submit generation jobs. Visuals are illustrative, not a live identity verification service.
 
@@ -41,7 +43,7 @@ Contact, product, plan and company links go to Blinking's real site. No fake for
 
 ## Connected platform and industry stories
 
-The hero now uses a dedicated 1400px WebP gateway sculpture (32KB), with radial edge feathering against the original pale background. The verification films retain their original imagery.
+The hero now uses a 720px Higgsfield 3D identity loop with a feathered pale edge and HTML signal labels. The AML section uses a matching 720px dark screening loop with accessible HTML capability labels. Both files are silent, browser-optimized MP4s with static poster fallbacks. The verification films retain their original imagery.
 
 The platform sequence connects Collect → Verify → Review → Welcome. GSAP scrubs the connecting lines, reveals the steps, and transitions the explanatory copy in a pinned stage. Below 1024px width or 800px height, all steps stay in the document and a compact progress diagram remains visible as they scroll. Reduced motion keeps every step visible without animation or pinning.
 
