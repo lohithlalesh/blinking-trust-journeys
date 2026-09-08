@@ -1,13 +1,13 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Check, FileCheck2, Fingerprint, SlidersHorizontal, UserCheck, Video } from 'lucide-react';
+import { ArrowRight, Check, FileCheck2, Fingerprint, ShieldCheck, SlidersHorizontal, UserCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const steps = [
   { title: 'Collect', subtitle: 'Start with the essentials', icon: FileCheck2, heading: 'A first step that feels simple.', description: 'Bring documents and customer details into one guided flow. Ask for the information your business needs, in your own order.', checks: ['Document capture', 'Customer details', 'Custom data fields'], capability: 'Data collection', link: 'https://www.blinking.id/plans/' },
   { title: 'Verify', subtitle: 'Know who is joining', icon: Fingerprint, heading: 'Connect the person to the identity.', description: 'Check the identity document, compare the face, and confirm a real person is present with Blinking Identify.', checks: ['Document checks', 'Biometric matching', 'Liveness detection'], capability: 'Blinking Identify', link: 'https://www.blinking.id/solutions/identify/' },
-  { title: 'Review', subtitle: 'Add the checks you need', icon: Video, heading: 'Make room for human judgment.', description: 'Bring in a verification agent for a video review. Connect KYC, AML, and PEP checks to your due diligence process.', checks: ['Video identification', 'AML & PEP checks', 'Agent review'], capability: 'Video verification', link: 'https://www.blinking.id/solutions/identify/' },
+  { title: 'Review', subtitle: 'Add risk context', icon: ShieldCheck, heading: 'See more before you decide.', description: 'Connect the verified identity to AML and PEP checks, watchlist and media screening, and your own risk rules. Add an agent-led video review when the journey calls for it.', checks: ['AML & PEP screening', 'Watchlist & media review', 'Optional video identification'], capability: 'AML & due diligence', link: '#aml-screening' },
   { title: 'Welcome', subtitle: 'Move forward with confidence', icon: UserCheck, heading: 'One connected customer journey.', description: 'Keep the customer, their documents, and the review together so your team has the context to decide what comes next.', checks: ['Customer management', 'Connected records', 'Your decision process'], capability: 'One platform', link: 'https://www.blinking.id/solutions/identify/' },
 ];
 

@@ -33,3 +33,9 @@ Component tree: Home → HeroArtwork; existing ScrollJourney; PlatformJourney �
 The platform story assembles Collect → Verify → Review → Welcome as the visitor scrolls. Industry panels explain bank account opening, subscriber activation, and verified player access. These are examples, never simulated live results or invented product screenshots. Desktop scroll moves the panels horizontally; smaller/short screens use horizontal swiping and explicit navigation. Reduced-motion visitors can access every step without pinning.
 
 Risks and corrections: repeated hero art → new asset; generic identical industry cards → specific symbols and process labels; clipping under the header → measured pin distance and minimum-height breakpoint; hidden keyboard destinations → controls and focus-aware navigation; motion failing to load → all content readable in the initial static layout. Continuous movement uses GSAP refs, with React state only for chapter changes.
+
+## Industry and AML revision
+
+The Review chapter now leads into a dedicated AML and due-diligence section, with indexable copy for AML, PEP, watchlist, media, and configurable risk checks. The section depicts verified identity evidence entering a screening stack and becoming connected review context. It makes the capability visible without presenting a simulated result as real customer data.
+
+Each industry panel is now a four-beat visual sequence: capture, verify, screen or connect, and outcome. Desktop scroll scrubs each sequence before moving the rail to the next industry; mobile keeps the same story in an accessible horizontal carousel. The graphics are code-rendered at device resolution, preserving quality and using no additional video-generation credits.

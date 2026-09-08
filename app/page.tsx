@@ -4,6 +4,7 @@ import { Navigation } from '@/components/navigation';
 import { ScrollJourney } from '@/components/scroll-journey';
 import { Industries } from '@/components/industries';
 import { PlatformJourney } from '@/components/platform-journey';
+import { AmlScreening } from '@/components/aml-screening';
 import { PageMotion } from '@/components/page-motion';
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <div className="journey-region"><section id="journey" className="intro container"><h2>Every great journey<br/>starts with trust.</h2><p>Verify an identity. Meet face to face. Collect what matters. Three connected ways to build customer confidence.</p></section>
       <ScrollJourney /></div>
       <PlatformJourney />
+      <AmlScreening />
       <Industries />
       <section className="privacy container" id="privacy">
         <div className="privacy-mark" aria-hidden="true"><Fingerprint size={100} strokeWidth={.85}/><span className="privacy-ring"/><span className="privacy-ring second"/><span className="privacy-lock"><LockKeyhole size={22}/></span></div>
